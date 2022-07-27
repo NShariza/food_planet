@@ -1,0 +1,11 @@
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 25px;
+    font-size: 18px;
+}
