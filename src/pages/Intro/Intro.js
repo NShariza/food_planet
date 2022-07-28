@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Intro.module.css';
-import burger from '../../media/images/burger.jpg.jpg';
+import burger from '../../media/images/burger.svg';
 import arrow from '../../media/icons/arrow.svg';
 
 const Intro = () => {
