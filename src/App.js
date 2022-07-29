@@ -9,18 +9,20 @@ import Delivery from './pages/Delivery/Delivery';
 import Contacts from './pages/Contacts/Contacts';
 import Phone from './pages/Phone/Phone';
 import ShopCart from './pages/ShopCart/ShopCart';
-import Intro from './pages/Intro/Intro';
-import News from './components/News/News';
-import BurgerMenu from './pages/BurgerMenu/BurgerOne';
+import Content from './components/Content/Content';
+import NewsContent from './components/NewsContent/NewsContent';
+import MainMenu from './components/MainMenu/MainMenu';
+import WhyUs from './components/WhyUs/WhyUs';
 
 
 function App() {
   return (
     <>
     <Header/>
-    <Intro/>
-    <News/>
-    <BurgerMenu/>
+    <Content/>
+    <NewsContent/>
+    <MainMenu/>
+    <WhyUs/>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Logo/>}/>

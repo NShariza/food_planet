@@ -1,0 +1,25 @@
+.whyUs h2{
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 25px;
+    color: #254F4C;
+    margin-top: 50px;
+}
+
+.list{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 265px;
+    margin: 45px 18px;
+    color: #254F4C;
+}
+
+
+.text {
+    width: 231px;
+    text-align: center;
+    margin: 0 0 7px;
+ 
+ }

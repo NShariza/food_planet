@@ -1,11 +1,22 @@
 .header{
     display: flex;
     justify-content: center;
-}
-
-.header ul li{
-    list-style: none;
+    margin-top: 20px;
+ }
+ .header ul li {
     display: inline;
-    margin-right: 25px;
+    list-style: none;
+    margin-left: 60px;
+ }
+ .header a{
+    text-decoration: none;
+    color: black;
     font-size: 18px;
-}
+ }
+ .header b {
+    margin: 3px;
+    color:#FF583E;
+ }
+ img{
+    margin-left: 4px;
+ }
