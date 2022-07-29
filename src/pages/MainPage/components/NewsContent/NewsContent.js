@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { nawBar, New_Content } from '../../constants';
+import { nawBar, New_Content } from '../../../../constants';
 import styles from './NewsContent.module.css';
-import plus from '../../media/icons/plus.svg';
-import minus from '../../media/icons/minus.svg';
+import plus from '../../../../media/icons/plus.svg';
+import minus from '../../../../media/icons/minus.svg';
 
 const NewsContent = () => {
 	const [number, setNumber] = useState(0);

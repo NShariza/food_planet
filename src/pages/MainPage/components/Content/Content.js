@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Content.module.css';
-import burgerOne from '../../media/images/burger.svg';
-import next from '../../media/icons/arrow.svg';
+import burgerOne from '../../../../media/images/burger.svg';
+import next from '../../../../media/icons/arrow.svg';
 
 const Content = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import {whyUs, whyUsList} from '../../constants';
+import {whyUs, whyUsList} from '../../../../constants';
 import styles from './WhyUs.module.css';
 
 
