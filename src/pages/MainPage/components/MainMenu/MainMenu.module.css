@@ -36,7 +36,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 265px;
+    width: 264px;
+    height: 358px;
     margin: 45px 18px;
     color: #254F4C;
     border-radius: 45px;
@@ -47,6 +48,7 @@
     width: 231px;
     text-align: center;
     margin: 0 0 7px;
+    font-size: 14px;
  
  }
  
@@ -61,56 +63,57 @@
     margin: 0;
  }
  
- .product_block b {
-    font-size: 35px;
-    color: #FF583E;
-    margin: -20px 8px;
-    cursor: pointer;
+.product_block b {
+   font-size: 35px;
+   color: #FF583E;
+   margin: -20px 8px;
+   cursor: pointer;
+}
+ 
+.amount {
+   display: flex;
+   align-items: center;
+   font-size: 15px;
+   color: red;
+}
+ 
+ 
+.product_block h3 {
+    margin: 7px 10px;
+    font-size: 20px;
  }
  
- .amount {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
- }
- 
- 
- .product_block h3 {
-    margin: 7px 0 0 0;
- }
- 
- .product_block img {
+.product_block img {
     margin-top: -45px;
  }
  
- .Content{
-    width: 1205px;
+.Content{
+    width: 1235px;
  }
- .filter{
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    margin-right: 42px;
-    margin-bottom: 30px;
-    
- }
- .filter select{
-    height: 30px;
-    width: 150px;
-    text-align: center;
-    margin: 12px ;
-    border: 1px solid rgba(128, 128, 128, 0.763);
- }
- .btn{
-   width: 200px;
-   height: 48.3px;
-   border-radius: 40px;
-   font-size: 14px;
-   font-family: 'Roboto';
-   cursor: pointer;
-   background: transparent;
-   border: 1px solid #FF583E;
-   color: #FF583E;
- }
+.filter{
+   font-family: 'Roboto', sans-serif;
+   display: flex;
+   justify-content:flex-end;
+   align-items: center;
+   margin-right: 42px;
+   margin-bottom: 30px;
+   
+}
+.filter select{
+   height: 30px;
+   width: 150px;
+   text-align: center;
+   margin: 12px ;
+   border: 1px solid rgba(128, 128, 128, 0.763);
+}
+.btn{
+  width: 200px;
+  height: 48.3px;
+  border-radius: 40px;
+  font-size: 14px;
+  font-family: 'Roboto';
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #FF583E;
+  color: #FF583E;
+}

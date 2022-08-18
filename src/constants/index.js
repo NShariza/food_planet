@@ -14,6 +14,7 @@ import fast from '../media/icons/fast-delivery.svg';
 import salad from '../media/icons/salad.svg';
 import menu from '../media/icons/menu.svg';
 import delivery from '../media/icons/delivery.svg';
+// import circle from '../media/images/circle.svg';
 
 
 
@@ -48,8 +49,9 @@ export const nawBar = [
   },
 ]
  
- export const New_Content = [
+ export const burgers = [
   {
+    id:1,
     img: [burgerOne],
     title: "Чизбургер",
     description:
@@ -57,6 +59,7 @@ export const nawBar = [
     price: "200",
   },
   {
+    id:2,
     img: [burgerTwo],
     title: "Чизбургер",
     description:
@@ -64,6 +67,7 @@ export const nawBar = [
     price: "200",
    },
   {
+    id:3,
     img:  [burgerThree],
     title: "Чизбургер",
     description:
@@ -71,6 +75,7 @@ export const nawBar = [
     price: "200",
   },
   {
+    id:4,
     img: [burgerFour],
     title: "Чизбургер",
     description:
@@ -81,7 +86,7 @@ export const nawBar = [
 
 
 
- export const menu_Pizza = [
+ export const pizzas = [
   {
   	img: [pizza1],
   	title: "Мексиканская",
@@ -166,5 +171,29 @@ export const whyUsList = [
     title: "Доставка",
     description:
       "Мы быстро доставляем вашу еду по указанному адресу",
+  }
+]
+
+
+export const feedBack = [
+  {
+    name: "Сергей",
+    description: "Большое спасибо! 5 пицц доставили даже быстрее чем планировалось. Пицца была горячая и всему коллективу понравилась! День Рождения прошел отлично! :)",
+    date: "02.07.2020"
+  },
+  {
+    name: "Сергей",
+    description: "Очень вкусные роллы Хаки, всем рекомендую! заказали в первый раз и теперь станем постоянными клиентами! Спасибо!",
+    date: "02.07.2020"
+  },
+  {
+    name: "Сергей",
+    description: "Очень избирателен в еде, и Уже в третий раз не разочаровываюсь в Food Planet, советую всем! Жена тоже довольна!",
+    date: "02.07.2020"
+  },
+  {
+    name: "Сергей",
+    description: "Хочу поблагодарить за бургер! Очень вкусненький в меру остренький) Спасибо, удивили!)",
+    date: "02.07.2020"
   }
 ]

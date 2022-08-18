@@ -19,10 +19,12 @@
     color: #254F4C;
 }
 
-
 .text {
     width: 231px;
     text-align: center;
     margin: 0 0 7px;
  
+ }
+ .something{
+    padding-top: 15px;
  }

@@ -1,0 +1,151 @@
+/* .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.head{
+    display: flex;
+    gap: 200px;
+    border-bottom: 0.5px solid gray;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.price {
+    border-top: 0.5px solid gray;
+
+} */
+
+.cart_page {
+    box-sizing: border-box;
+}
+
+.cart_title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.cart_title h3 {
+    font-family: 'Roboto';
+    color: #FF583E;
+    font-size: 36px;
+    line-height: 39px;
+    /* color: #1D3130; */
+}
+
+.cart_title h4 {
+    font-size: 21px;
+    line-height: 24px;
+    color: #2B4241;
+    margin: 8px 0;
+}
+
+.cart_page table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.products_title th,
+.count_element th {
+    width: 250px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #254F4C;
+    padding: 10px 10px;
+}
+
+.products_in_cart td {
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.products_in_cart input {
+    width: 50px;
+    padding: 10px 10px;
+    border: 1px solid #D2D2D7;
+    border-radius: 5px;
+}
+
+.count_button {
+    margin: 0 0 0 30px;
+}
+
+.count_button button {
+    width: 16px;
+    color: #000;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.products_in_cart img {
+    width: 50px;
+    height: 40px;
+    vertical-align: center;
+}
+
+.delete_in_cart img {
+    width: 20px;
+    height: 20px;
+}
+
+.delete_in_cart button {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.count_element {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 200px 0 0;
+}
+
+.count_element h3 {
+    font-size: 21px;
+    line-height: 24px;
+    color: #2B4241;
+}
+
+.place_order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.place_order a {
+    text-decoration: none;
+    color: #254F4C;
+    font-size: 24px;
+    line-height: 21px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 150px;
+    padding: 16px 0;
+}
+
+
+.active{
+    text-decoration: none;
+    color: #254F4C;
+    font-size: 30px;
+
+}
+
+.place_order button {
+    width: 200px;
+    height: 48px;
+    background-color: #254F4C;
+    border-radius: 40px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 180px;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import {whyUs, whyUsList} from '../../../../constants';
+import {whyUsList} from '../../../../constants';
 import styles from './WhyUs.module.css';
 
 
@@ -10,7 +10,7 @@ const WhyUs = () => {
 			<h2>Почему выбирают нас:</h2>
 			<div className={styles.list}>
 				{whyUsList.map((post) => (
-					<div className={styles.something}>
+					<div className={styles.something} key={post.id}>
 						<img src={post.img} alt="" />
 						<h3>{post.title}</h3>
 						<p className={styles.text}>{post.description}</p>
@@ -20,5 +20,6 @@ const WhyUs = () => {
 		</div>
 	);
 };
+
 
 export default WhyUs;

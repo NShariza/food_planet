@@ -1,0 +1,38 @@
+.newsList {
+    display: flex;
+
+}
+.newsList h2{
+    margin-right: 190px;
+    font-family: 'Roboto';
+    color: #254F4C;
+    font-size: 25px;
+}
+
+.newsList ul li a:hover {
+    color: #FF583E;
+    border-bottom: 0.5px solid #FF583E
+ }
+.list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 40px;
+    margin: 0 auto;
+    padding: 30px 0;
+    list-style: none;
+}
+.list li a{
+    font-family: 'Roboto', serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #1D3130;
+}
+
+/* .active {
+    color: #FF583E;
+} */
