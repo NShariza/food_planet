@@ -1,14 +1,14 @@
 import React, {useEffect, useState} from "react";
 import toast from 'react-hot-toast';
-import styles from "./MainMenu.module.css";
+import styles from "./DrinksMenu.module.css";
 
 
-const MainMenu = () => {
+const DrinksMenu = () => {
   const [number, setNumber] = useState(0);
-  const [pizzas, setPizzas] = useState([]);
+  const [drinks, setDrinks] = useState([]);
 
-  const getPizzas = () => {
-      const url = 'http://localhost:3001/pizzas';
+  const getDrinks = () => {
+      const url = 'http://localhost:3001/drinks';
 
       fetch(url)
           .then(response => {
@@ -18,7 +18,7 @@ const MainMenu = () => {
                   toast.error('Произошла ошибка. Статус ошибки: ' + response.status);
               }
           })
-          .then(data => setPizzas(data))
+          .then(data => setDrinks(data))
   }
 
   const getProduct = (data) => {
@@ -30,7 +30,7 @@ const MainMenu = () => {
   }
 
   useEffect(() => {
-      getPizzas();
+    getDrinks();
   }, [])
 
 
@@ -46,25 +46,24 @@ const MainMenu = () => {
 					</select>
 				</div>
 				<div className={styles.menu}>
-					{pizzas.map((item) => (
+					{drinks.map((item) => (
 						<div className={styles.product_block} key={item.id}>
 							<img src={item.img} alt="" />
 							<h3>{item.title}</h3>
 							<p className={styles.description}>{item.description}</p>
 							<h3>{item.price} сом</h3>
 							<p className={styles.amount}>
-              				<b onClick={() => setNumber(number - 1)}>-</b>
+              <b onClick={() => setNumber(number - 1)}>-</b>
 							{number}
 							<b onClick={() => setNumber(number + 1)}>+</b>
 							</p>
 							<button onClick={() => getProduct(item)}>В корзину</button>
 						</div>
 					))}
-					<button className={styles.btn}>Показать еще</button>
 				</div>
 			</div>
 		</div>
 	);
 };
 
-export default MainMenu;
+export default DrinksMenu;

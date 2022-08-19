@@ -1,8 +1,14 @@
- .menu{
+.menu{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+ }
+
+ .menu img{
+    width: 150px;
+    height: 150px;
+    border-radius: 40px;
  }
  
  .product_block {
@@ -54,8 +60,8 @@
  
  
 .product_block h3 {
-    margin: 7px 10px;
-    font-size: 20px;
+    margin: 10px 10px;
+    font-size: 18px;
  }
  
 .product_block img {

@@ -12,11 +12,11 @@ const MenuList = () => {
             <ul className={styles.list}>
                 <li><NavLink className={setActive} to="/menu/pizza">Пицца</NavLink></li>
                 <li><NavLink className={setActive} to="/menu/burger">Бургер</NavLink></li>
-                <li><NavLink className={setActive} to="/sushi">Суши</NavLink></li>
-                <li><NavLink className={setActive} to="/rolls">Роллы</NavLink></li>
-                <li><NavLink className={setActive} to="/salads">Салаты</NavLink></li>
-                <li><NavLink className={setActive} to="/desserts">Десерты</NavLink></li>
-                <li><NavLink className={setActive} to="/drinks">Напитки</NavLink></li>
+                <li><NavLink className={setActive} to="/menu/sushi">Суши</NavLink></li>
+                <li><NavLink className={setActive} to="/menu/rolls">Роллы</NavLink></li>
+                <li><NavLink className={setActive} to="/menu/salads">Салаты</NavLink></li>
+                <li><NavLink className={setActive} to="/menu/desserts">Десерты</NavLink></li>
+                <li><NavLink className={setActive} to="/menu/drinks">Напитки</NavLink></li>
             </ul>
         </div>
     );

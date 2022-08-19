@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from "react";
-import {toast} from 'react-hot-toast';
-import styles from './NewsContent.module.css';
-import plus from '../../../../media/icons/plus.svg';
-import minus from '../../../../media/icons/minus.svg';
+import toast from 'react-hot-toast';
+import styles from './SushiMenu.module.css';
 
-const NewsContent = () => {
+const SushiMenu = () => {
 	const [number, setNumber] = useState(0);
-  const [burgers, setBurgers] = useState([]);
+  const [sushi, setSushi] = useState([]);
 
-  const getBurgers = () => {
-      const url = 'http://localhost:3001/burgers';
+  const getSushi = () => {
+      const url = 'http://localhost:3001/sushi';
 
       fetch(url)
           .then(response => {
@@ -19,7 +17,7 @@ const NewsContent = () => {
                   toast.error('Произошла ошибка. Статус ошибки: ' + response.status);
               }
           })
-          .then(data => setBurgers(data))
+          .then(data => setSushi(data))
   }
 
   const getProduct = (data) => {
@@ -31,22 +29,22 @@ const NewsContent = () => {
   }
 
   useEffect(() => {
-      getBurgers();
+      getSushi();
   }, [])
 
 	return (
 		<div className={styles.NewsContent}>
 			<div className={styles.menu}>
-				{burgers.map((item) => (
+				{sushi.map((item) => (
 					<div className={styles.product_block} key={item.id}>
 						<img src={item.img} alt="" />
 						<h2>{item.title}</h2>
 						<p className={styles.description}>{item.description}</p>
 						<h3>{item.price} сом</h3>
 						<p className={styles.amount}>
-							<b onClick={() => setNumber(number - 1)}><img src={minus} alt="" /></b>
+							<b onClick={() => setNumber(number - 1)}>-</b>
 							{number}
-							<b onClick={() => setNumber(number + 1)}><img src={plus} alt="" /></b>
+							<b onClick={() => setNumber(number + 1)}>+</b>
 						</p>    
 						<button onClick={() => getProduct(item)}>В корзину</button>
 					</div>
@@ -56,4 +54,4 @@ const NewsContent = () => {
 	);
 };
 
-export default NewsContent;
+export default SushiMenu;

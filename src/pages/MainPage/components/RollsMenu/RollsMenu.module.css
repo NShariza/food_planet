@@ -3,6 +3,13 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 50px;
+ }
+
+ .menu img{
+    width: 200px;
+    height: 140px;
+    border-radius: 15%;
  }
  
  .product_block {

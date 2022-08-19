@@ -45,12 +45,11 @@ useEffect(getProducts, []);
   return (
     <div className={styles.cart_page}>
       <div className={styles.cart_title}>
-        {/* <h3>Корзина</h3> */}
-        <h3>Товары в вашей корзине</h3>
+        <h3>Товары в корзине</h3>
       </div>
       <table>
       <thead>
-      <tr className={styles.products_title}>
+      <tr className={styles.product_title}>
         <th colSpan={2}>Продукт</th>
         <th>Количество</th>
         <th>Цена</th>
@@ -60,7 +59,7 @@ useEffect(getProducts, []);
       <tbody>
       {
         goods.map(item =>
-          <tr key={item.id} className={styles.products_in_cart}>
+          <tr key={item.id} className={styles.productCart}>
             <td><img src={item.image} alt=""/></td>
             <td>{item.title}</td>
             <td>
@@ -69,7 +68,7 @@ useEffect(getProducts, []);
             </td>
             <td><p><span>{item.price}</span> сом</p></td>
             <td><p><span>{item.count * item.price}</span> сом</p></td>
-            <td className={styles.delete_in_cart}>
+            <td className={styles.delete}>
               <button onClick={() => deleteGoods(item.id)}><img src={cross} alt=""/></button>
             </td>
           </tr>
@@ -80,7 +79,7 @@ useEffect(getProducts, []);
       <div className={styles.count_element}>
         <h3>Итого: <span>{getTotalSum()}</span><span>сом</span></h3>
       </div>
-      <div className={styles.place_order}>
+      <div className={styles.order}>
         <NavLink className={setActive} to="/">Продолжить покупки</NavLink>
         <NavLink to="/checkout">
           <button>Оформить заказ</button>

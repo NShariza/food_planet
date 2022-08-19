@@ -7,6 +7,7 @@ import MenuList from './components/NewsList/NewsList';
 import MainMenu from './components/MainMenu/MainMenu';
 import WhyUs from './components/WhyUs/WhyUs';
 import Feedback from './components/Feedback/Feedback';
+// import SushiMenu from './components/SushiMenu/SushiMenu';
 
 const MainPage = () => {
     return (
@@ -16,6 +17,7 @@ const MainPage = () => {
             <NewsContent/>
             <MenuList/>
             <MainMenu/>
+            {/* <SushiMenu/> */}
             <WhyUs/>
             <Feedback/>
         </div>

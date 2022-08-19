@@ -14,7 +14,7 @@ const Header = () => {
       <>
         <header>
           <ul>
-            <img src={logo} alt=""/>
+            <NavLink className={setActive} to="/"><img src={logo} alt=""/></NavLink>
             <li><NavLink className={setActive} to="/">Главная</NavLink></li>
             <li><NavLink className={setActive} to="/menu">Меню</NavLink></li>
             <li><NavLink className={setActive} to="/delivery">Доставка</NavLink></li>

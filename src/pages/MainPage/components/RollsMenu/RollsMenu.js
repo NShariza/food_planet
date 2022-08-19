@@ -1,14 +1,14 @@
 import React, {useEffect, useState} from "react";
 import toast from 'react-hot-toast';
-import styles from "./MainMenu.module.css";
+import styles from "./RollsMenu.module.css";
 
 
-const MainMenu = () => {
+const RollsMenu = () => {
   const [number, setNumber] = useState(0);
-  const [pizzas, setPizzas] = useState([]);
+  const [rolls, setRolls] = useState([]);
 
-  const getPizzas = () => {
-      const url = 'http://localhost:3001/pizzas';
+  const getRolls = () => {
+      const url = 'http://localhost:3001/rolls';
 
       fetch(url)
           .then(response => {
@@ -18,7 +18,7 @@ const MainMenu = () => {
                   toast.error('Произошла ошибка. Статус ошибки: ' + response.status);
               }
           })
-          .then(data => setPizzas(data))
+          .then(data => setRolls(data))
   }
 
   const getProduct = (data) => {
@@ -30,7 +30,7 @@ const MainMenu = () => {
   }
 
   useEffect(() => {
-      getPizzas();
+      getRolls();
   }, [])
 
 
@@ -46,7 +46,7 @@ const MainMenu = () => {
 					</select>
 				</div>
 				<div className={styles.menu}>
-					{pizzas.map((item) => (
+					{rolls.map((item) => (
 						<div className={styles.product_block} key={item.id}>
 							<img src={item.img} alt="" />
 							<h3>{item.title}</h3>
@@ -67,4 +67,4 @@ const MainMenu = () => {
 	);
 };
 
-export default MainMenu;
+export default RollsMenu;

@@ -1,24 +1,3 @@
-.navBar  ul li{
-  display: inline;
-  list-style: none;
-  margin-left: 40px;
-}
-.navBar{
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  align-items: center;
-}
-.navBar a{
-  text-decoration: none;
-  color: black;
-}
-.navBar h3{
-  color:#254F4C;
-  margin: 0 120px 0 10px;
-  font-size: 25px;
-  font-family: 'Roboto', sans-serif;
-}
-    
 .menu{
   display: flex;
 }
